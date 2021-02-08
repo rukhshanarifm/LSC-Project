@@ -20,13 +20,13 @@ Project Repository:
 - [scraping_functions.py](scraping_functions.py): Helper functions I created for crawling purposes
 - [get_information.py](get_information.py): Helper functions I created for extracting information
 - [misc_helper_functions.py](misc_helper_functions.py): Miscellaneous helper functions
-- [dask1.png](dask1.png): Task Graph
-- [dask2.png](dask2.png): Task Graph
-- [map.jpeg](map.png): Mapping instances of GBV across Pakistan
-- [map_labelled.jpeg](map_labelled.png): Map with labels
-- [map_labelled_manually.png](map_labelled_manually.png): Map with manually added labels
-- [wordcloud.png](wordcloud.png): Wordcloud
-- [dask_wordcloud.png](dask_wordcloud.png): Task Graph
+- [images/dask1.png](dask1.png): Task Graph
+- [images/dask2.png](dask2.png): Task Graph
+- [images/map.jpeg](map.png): Mapping instances of GBV across Pakistan
+- [images/map_labelled.jpeg](map_labelled.png): Map with labels
+- [images/map_labelled_manually.png](map_labelled_manually.png): Map with manually added labels
+- [images/wordcloud.png](wordcloud.png): Wordcloud
+- [images/dask_wordcloud.png](dask_wordcloud.png): Task Graph
 - [lda.html](lda.html): Topic Modeling HTML
 - [pk.csv](pk.csv): CSV containing names of Pakistani cities
 - [drf_data.xlsx](drf_data.xlsx): Data provided by the Digital Rights Foundation
@@ -113,7 +113,7 @@ unique_delayed.visualize()
 
 I create a task graph for **one keyword** (task graph for 15 keywords is in [the project jupyter-notebook](project.ipynb)). This is as follows:
 
-![Task Graph for one Keyword](dask1.png)
+![Task Graph for one Keyword](images/dask1.png)
 
 This allows us to gather relevant links in parallel. We are returned a link containing links that were scraped -- we did not face any errors will running our implementation. However, as backup, we saved csvs.
 
@@ -140,7 +140,7 @@ delayed.visualize("dask2")
 
 A Dask Task graph is created for extracting information for 10 links:
 
-![Task Graph for extracting information for 10 links](dask2.png)
+![Task Graph for extracting information for 10 links](images/dask2.png)
 
 Now, we have a dataframe containing information on extracted links for each keyword with a variety of features.
 
@@ -148,15 +148,15 @@ Now, we have a dataframe containing information on extracted links for each keyw
 
 Primarily, we hope to see how information from the articles is spread across various cities in Pakistan. For this, we use a shapefile for Pakistani cities -- ```geopandas``` is utilized to read this. First, we compute the number of instances each city name appears in an article. The following bar chart depicts these:
 
-![Number of Articles by City (Top 10)](plot1.png)
+![Number of Articles by City (Top 10)](images/plot1.png)
 
 Then, we join this (on city name) with the geopandas dataframe and map these:
 
-![Number of Articles By City: Map](map_labelled_manually.png)
+![Number of Articles By City: Map](images/map_labelled_manually.png)
 
 Next, we used a delayed dataframe to clean and tokenize the article text data in our extracted information. Using this, we generate a basic WordCloud
 
-![WordCloud](wordcloud.png)
+![WordCloud](images/wordcloud.png)
 
 # Topic Modeling
 
@@ -191,5 +191,3 @@ police case accused court arrested girl two woman also suspect
 ```
 
 We observe how the topics are successful at identifying the various type of articles being published.
-
-Follow this [webpage](https://lsc-project-ram.000webhostapp.com/) to better understand and visualize how these topics vary and the respective keywords.
