@@ -20,16 +20,16 @@ Project Repository:
 - [scraping_functions.py](scraping_functions.py): Helper functions I created for crawling purposes
 - [get_information.py](get_information.py): Helper functions I created for extracting information
 - [misc_helper_functions.py](misc_helper_functions.py): Miscellaneous helper functions
-- [images/dask1.png](dask1.png): Task Graph
-- [images/dask2.png](dask2.png): Task Graph
-- [images/map.jpeg](map.png): Mapping instances of GBV across Pakistan
-- [images/map_labelled.jpeg](map_labelled.png): Map with labels
-- [images/map_labelled_manually.png](map_labelled_manually.png): Map with manually added labels
-- [images/wordcloud.png](wordcloud.png): Wordcloud
-- [images/dask_wordcloud.png](dask_wordcloud.png): Task Graph
-- [lda.html](lda.html): Topic Modeling HTML
-- [pk.csv](pk.csv): CSV containing names of Pakistani cities
-- [drf_data.xlsx](drf_data.xlsx): Data provided by the Digital Rights Foundation
+- [dask1.png](images/dask1.png): Task Graph
+- [dask2.png](images/dask2.png): Task Graph
+- [map.jpeg](images/map.png): Mapping instances of GBV across Pakistan
+- [map_labelled.jpeg](images/ap_labelled.png): Map with labels
+- [map_labelled_manually.png](images/map_labelled_manually.png): Map with manually added labels
+- [wordcloud.png](images/wordcloud.png): Wordcloud
+- [dask_wordcloud.png](images/dask_wordcloud.png): Task Graph
+- [lda.html](misc/lda.html): Topic Modeling HTML
+- [pk.csv](data/pk.csv): CSV containing names of Pakistani cities
+- [drf_data.xlsx](data/drf_data.xlsx): Data provided by the Digital Rights Foundation
 
 # Context
 
